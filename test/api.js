@@ -4,7 +4,7 @@ const Postgrator = require('../postgrator')
 
 const path = require('path')
 const migrationDirectory = path.join(__dirname, 'migrations')
-const pgUrl = 'tcp://postgrator:postgrator@localhost:5432/postgrator'
+const pgUrl = 'postgres://postgrator:postgrator@localhost:5432/postgrator'
 
 describe('API', function() {
   const postgrator = new Postgrator({
